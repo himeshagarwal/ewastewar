@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the key drivers behind the global e-waste crisis with detailed analysis and interactive visualizations">
+    <meta name="keywords" content="e-waste causes, technology obsolescence, electronic recycling, sustainable tech">
+    <title>Causes of E-Waste | Understanding the Digital Sustainability Crisis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Exo+2:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+    --primary-color: #4CAF50; 
+    --secondary-color: #333; 
+    --background-color: #f4f4f4; 
+    --text-color: #fff; 
+    --accent-color: #2cda9d; 
+    --dark-bg: #0a2640; 
+    --light-bg: rgba(255, 255, 255, 0.1); 
+    --transition-speed: 0.3s; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header.glass-nav {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: color var(--transition-speed);
+}
+
+nav a:hover, nav a.active {
+    color: var(--accent-color);
+}
+
+.cyber-header {
+    position: relative;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.holographic-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.holographic-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(44, 218, 157, 0.8);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    background: var(--light-bg);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform var(--transition-speed);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.progress-bar {
+    background: var(--primary-color);
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.content {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.content h2 i {
+    margin-right: 0.5rem;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 2rem;
+    background: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(44, 218, 157, 0.5);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .social-icons {
+    margin-top: 1rem;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: var(--text-color);
+    transition: color var(--transition-speed);
+}
+
+footer .social-icons a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .cyber-header h1 {
+        font-size: 2.5rem;
+    }
+    .content {
+        padding: 1rem;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="glass-nav">
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="http://127.0.0.1:5500/about.html"><i class="fas fa-microchip"></i> About</a></li>
+                <li><a href="http://127.0.0.1:5500/cause.html" class="active"><i class="fas fa-radiation"></i> Causes</a></li>
+                <li><a href="http://127.0.0.1:5500/effects.html"><i class="fas fa-skull-crossbones"></i> Effects</a></li>
+                <li><a href="http://127.0.0.1:5500/solution.html"><i class="fas fa-recycle"></i> Solutions</a></li>
+                <li><a href="http://127.0.0.1:5500/resource.html"><i class="fas fa-database"></i> Resources</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html"><i class="fas fa-satellite-dish"></i> Contact</a></li>
+                <li><a href="http://127.0.0.1:5500/feature.html">features</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="cyber-header">
+            <div class="holographic-overlay">
+                <h1 data-text="Causes of E-Waste">Causes of E-Waste</h1>
+                <p class="subtitle">Decoding the Digital Consumption Crisis</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">53.6M</div>
+                        <div class="stat-label">Metric Tons (2023)</div>
+                        <div class="stat-progress"><div class="progress-bar" style="width: 82%"></div></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">+21%</div>
+                        <div class="stat-label">Annual Growth Rate</div>
+                        <div class="progress-bar" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+ </section>
+        <section class="content">
+            <h2><i class="fas fa-bolt"></i> Rapid Technology Upgrades</h2>
+            <p>The tech industry moves at lightning speed, releasing new smartphones, laptops, and gadgets every year. Consumers are encouraged to upgrade frequently, leaving older devices obsolete and discarded, fueling the e-waste pile-up.</p>
+            
+            <h2><i class="fas fa-trash-alt"></i> Poor Recycling Habits</h2>
+            <p>Despite recycling options, many people toss electronics into regular trash bins. Lack of awareness, inconvenient recycling programs, and inadequate infrastructure mean only a fraction of e-waste is properly processed.</p>
+            
+            <h2><i class="fas fa-cogs"></i> Planned Obsolescence</h2>
+            <p>Manufacturers design products with limited lifespans—think batteries that can’t be replaced or software that stops updating. This forces users to buy new devices sooner, accelerating e-waste generation.</p>
+            
+            <h2><i class="fas fa-globe"></i> Global Consumer Demand</h2>
+            <p>Rising demand for electronics in developing countries, coupled with affordable, low-quality products, leads to a flood of short-lived devices that quickly end up as waste.</p>
+        </section>
+        <section class="call-to-action">
+            <a href="http://127.0.0.1:5500/effects.html" class="btn">See the Effects <i class="fas fa-arrow-right"></i></a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 The Growing Crisis of E-Waste</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
